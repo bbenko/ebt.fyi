@@ -1,0 +1,108 @@
+---
+layout: layouts/base.njk
+description: A curated gathering for founders, developers, and operators focused on practical AI, emerging technology, and real business opportunities.
+---
+{% set meetups = collections.meetups %}
+{% set featuredMeetup = meetups[0] %}
+
+<section class="hero">
+  <div class="container hero-grid hero-grid-single">
+    <div class="hero-copy hero-copy-tight">
+      <p class="eyebrow">In person. Small room.</p>
+      <h1>Practical AI discussions in the East Bay</h1>
+      <p class="lead">For founders, developers, and operators comparing how AI is changing real work.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-current" id="meetups">
+  <div class="container">
+    <div class="section-header section-header-stack">
+      <div>
+        <p class="eyebrow">Next meetup</p>
+        <h2>{{ featuredMeetup.data.title }}</h2>
+        <p class="meta-line">{{ featuredMeetup.data.meetupDate | formatMeetupDate }} | {{ featuredMeetup.data.location }}</p>
+        <p class="hero-kicker">Free to attend. Small room. Bring one real workflow or question.</p>
+      </div>
+    </div>
+
+    <div class="simple-home-card next-meetup-content">
+      <p class="section-intro next-meetup-intro">{{ featuredMeetup.data.agendaIntro }}</p>
+      <div class="next-meetup-grid">
+        <div class="next-meetup-block">
+          <p class="eyebrow">We'll cover</p>
+          <ul class="preview-list">
+            {% for item in featuredMeetup.data.highlights %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="next-meetup-block">
+          <p class="eyebrow">Format</p>
+          <ul class="preview-list">
+            {% for item in featuredMeetup.data.sessionPlan %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="hero-actions preview-actions">
+        <a class="button" href="{{ featuredMeetup.url | url }}">See this meetup's topics</a>
+        <a
+          href="{{ site.luma.eventUrl }}"
+          class="button button-muted luma-checkout--button"
+          data-luma-action="checkout"
+          data-luma-event-id="{{ site.luma.eventId }}"
+        >
+          RSVP
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if meetups.length > 1 %}
+<section class="section" id="archive">
+  <div class="container">
+    <div class="section-header">
+      <div>
+        <p class="eyebrow">Past meetups</p>
+        <h2>Archive</h2>
+      </div>
+    </div>
+
+    <div class="meetup-list">
+      {% for meetup in meetups %}
+      {% if meetup.url != featuredMeetup.url %}
+      <a class="meetup-row" href="{{ meetup.url | url }}">
+        <div>
+          <p class="row-date">{{ meetup.data.meetupDate | formatMeetupDate }}</p>
+          <h3>{{ meetup.data.title }}</h3>
+          <p class="row-summary">{{ meetup.data.summary }}</p>
+        </div>
+        <span class="arrow">View</span>
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section-accent" id="about">
+  <div class="container">
+    <p class="eyebrow">About</p>
+    <h2>How East Bay Tech works</h2>
+    <p class="section-intro">{{ site.seminarIntro }}</p>
+    <article class="panel simple-home-card">
+      <dl class="fact-list">
+        {% for item in site.seminarDetails %}
+        <div class="fact-row">
+          <dt>{{ item.label }}</dt>
+          <dd>{{ item.value }}</dd>
+        </div>
+        {% endfor %}
+      </dl>
+    </article>
+  </div>
+</section>

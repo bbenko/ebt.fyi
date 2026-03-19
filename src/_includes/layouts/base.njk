@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if title %}{{ title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ summary or description or site.description }}">
+    <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+    <link rel="icon" href="{{ '/assets/favicon.svg' | url }}" type="image/svg+xml">
+    <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}{{ site.title }}">
+    <meta property="og:description" content="{{ summary or description or site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta name="theme-color" content="#f0eadc">
+    <link rel="stylesheet" href="{{ '/assets/site.css' | url }}">
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container header-row">
+          <a class="brand" href="{{ '/' | url }}">{{ site.title }}</a>
+          <nav class="site-nav" aria-label="Primary">
+            <a href="{{ '/#meetups' | url }}">Meetups</a>
+            <a href="{{ '/#about' | url }}">About</a>
+            <a
+              class="button button-small luma-checkout--button"
+              href="{{ site.luma.eventUrl }}"
+              data-luma-action="checkout"
+              data-luma-event-id="{{ site.luma.eventId }}"
+            >
+              RSVP
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        {{ content | safe }}
+      </main>
+
+      <footer class="site-footer">
+        <div class="container footer-row">
+          <div>
+            <p class="eyebrow">East Bay Tech</p>
+            <p class="footer-copy">Practical AI, emerging technology, and real business conversations.</p>
+          </div>
+          <div class="footer-links">
+            <a href="{{ '/' | url }}">Home</a>
+            <a href="{{ '/#meetups' | url }}">Meetups</a>
+            <a href="{{ '/#about' | url }}">About</a>
+            <a
+              class="luma-checkout--button"
+              href="{{ site.luma.eventUrl }}"
+              data-luma-action="checkout"
+              data-luma-event-id="{{ site.luma.eventId }}"
+            >
+              RSVP
+            </a>
+          </div>
+        </div>
+      </footer>
+    </div>
+    {% if site.luma and site.luma.eventId %}
+    <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
+    {% endif %}
+    <script>
+      document.querySelectorAll('a[href]').forEach((link) => {
+        if (link.classList.contains('luma-checkout--button')) {
+          return
+        }
+
+        const href = link.getAttribute('href')
+        if (!href || href.startsWith('/') || href.startsWith('#')) {
+          return
+        }
+
+        try {
+          const url = new URL(href, window.location.origin)
+          if (url.origin !== window.location.origin) {
+            link.setAttribute('target', '_blank')
+            link.setAttribute('rel', 'noreferrer')
+          }
+        } catch {
+        }
+      })
+    </script>
+  </body>
+</html>

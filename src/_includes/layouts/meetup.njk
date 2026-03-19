@@ -1,0 +1,38 @@
+---
+layout: layouts/base.njk
+---
+{% set neighbors = collections.meetups | adjacentMeetups(page.url) %}
+
+<section class="section detail-hero">
+  <div class="container detail-shell">
+    <p class="eyebrow">Upcoming meetup</p>
+    <h1>{{ title }}</h1>
+    <p class="detail-meta">
+      <span>Date</span>
+      <strong>{{ meetupDate | formatMeetupDate }}</strong>
+      <span>Place</span>
+      <strong>{{ location }}</strong>
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container detail-shell">
+    <div class="detail-main">
+      <article class="prose panel detail-agenda">
+        {{ content | safe }}
+      </article>
+
+      {% if neighbors.newer or neighbors.older %}
+      <nav class="simple-nav" aria-label="Meetup navigation">
+        {% if neighbors.newer %}
+        <a href="{{ neighbors.newer.url | url }}">Newer: {{ neighbors.newer.data.title }}</a>
+        {% endif %}
+        {% if neighbors.older %}
+        <a href="{{ neighbors.older.url | url }}">Older: {{ neighbors.older.data.title }}</a>
+        {% endif %}
+      </nav>
+      {% endif %}
+    </div>
+  </div>
+</section>
