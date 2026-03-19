@@ -103,7 +103,7 @@ sessionPlan:
 
 ### Public trust and politics
 
-### [People really hate AI but not as much as Iran or Democrats](https://fortune.com/2026/03/09/ai-opinion-poll-democrats-iran-war-president-donald-trump/)
+### [People really hate AI](https://archive.ph/Uc4nT)
 
 - Fortune cites polling showing only 26% of respondents had a positive view of AI, while 46% were negative.
 - The article connects that skepticism to trust, privacy, social responsibility, and labor anxiety.

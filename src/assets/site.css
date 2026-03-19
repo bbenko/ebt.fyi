@@ -510,11 +510,17 @@ h3 {
   color: var(--ink-soft);
 }
 
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .footer-organizer > * + * {
   margin-left: 0.5rem;
 }
 
-.footer-organizer a::before,
+.footer-social::before,
 .footer-organizer span + span::before {
   content: " | ";
   color: rgba(15, 23, 34, 0.26);
@@ -643,8 +649,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .footer-organizer span,
-  .footer-organizer a {
+  .footer-organizer > span {
     display: block;
   }
 
@@ -652,7 +657,12 @@ h3 {
     margin-left: 0;
   }
 
-  .footer-organizer a::before,
+  .footer-social {
+    display: inline-flex;
+    flex-wrap: nowrap;
+  }
+
+  .footer-social::before,
   .footer-organizer span + span::before {
     content: "";
     margin-right: 0;
