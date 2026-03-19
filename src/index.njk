@@ -18,31 +18,23 @@ layout: layouts/base.njk
   </div>
 </section>
 
-<section class="section" id="room">
+<section class="section" id="community">
   <div class="container">
     <div class="section-header section-header-stack">
       <div>
-        <p class="eyebrow">Who's in the room</p>
-        <h2>A curated group of founders, technical leaders, and operators.</h2>
-        <p class="section-intro">People come for practical signal and a room full of peers worth learning from.</p>
+        <p class="eyebrow">Community</p>
+        <h2>The kinds of people you will meet.</h2>
+        <p class="section-intro">This is a small room for people using AI in real work, not spectators looking for generic takes. The mix matters as much as the topic list: strong operators, technical builders, and domain experts who can compare notes at a useful level.</p>
       </div>
     </div>
 
     <div class="simple-home-card next-meetup-content">
-      <div class="next-meetup-grid">
+      <div class="next-meetup-grid next-meetup-grid-single">
         <div class="next-meetup-block">
-          <p class="eyebrow">Who shows up</p>
-          <ul class="preview-list">
-            {% for item in site.attendeeProfiles %}
-            <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="next-meetup-block">
-          <p class="eyebrow">What they are doing with AI</p>
-          <ul class="preview-list">
-            {% for item in site.attendeeActivities %}
-            <li>{{ item }}</li>
+          <p class="eyebrow">Attendee mix</p>
+          <ul class="preview-list room-list">
+            {% for item in site.attendeeHighlights %}
+            <li><strong>{{ item.who }}</strong> {{ item.aiWork }}</li>
             {% endfor %}
           </ul>
         </div>
@@ -115,21 +107,3 @@ layout: layouts/base.njk
   </div>
 </section>
 {% endif %}
-
-<section class="section section-accent" id="about">
-  <div class="container">
-    <p class="eyebrow">Who it's for</p>
-    <h2>For builders who want better peers, not generic takes.</h2>
-    <p class="section-intro">{{ site.seminarIntro }}</p>
-    <article class="panel simple-home-card">
-      <dl class="fact-list">
-        {% for item in site.seminarDetails %}
-        <div class="fact-row">
-          <dt>{{ item.label }}</dt>
-          <dd>{{ item.value }}</dd>
-        </div>
-        {% endfor %}
-      </dl>
-    </article>
-  </div>
-</section>

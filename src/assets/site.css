@@ -384,6 +384,29 @@ h3 {
   color: var(--ink-soft);
 }
 
+.room-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.8rem;
+  padding-left: 0;
+  list-style: none;
+}
+
+.room-list li {
+  min-height: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: var(--shadow-soft);
+}
+
+.room-list strong {
+  display: block;
+  margin-bottom: 0.3rem;
+  color: var(--ink);
+}
+
 .preview-actions {
   margin-top: 1.5rem;
 }
@@ -459,6 +482,10 @@ h3 {
   gap: 1.5rem;
 }
 
+.next-meetup-grid-single {
+  grid-template-columns: 1fr;
+}
+
 .next-meetup-block {
   padding-top: 1rem;
   border-top: 1px solid var(--line);
@@ -478,6 +505,46 @@ h3 {
   margin: 0.25rem 0 0;
 }
 
+.footer-organizer {
+  margin: 0.75rem 0 0;
+  color: var(--ink-soft);
+}
+
+.footer-organizer > * + * {
+  margin-left: 0.5rem;
+}
+
+.footer-organizer a::before,
+.footer-organizer span + span::before {
+  content: " | ";
+  color: rgba(15, 23, 34, 0.26);
+  margin-right: 0.5rem;
+}
+
+.footer-organizer a {
+  color: var(--accent-dark);
+}
+
+.footer-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  vertical-align: -0.2em;
+}
+
+.footer-icon-link svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+.footer-organizer a:hover,
+.footer-organizer a:focus-visible {
+  text-decoration: underline;
+}
+
 @media (max-width: 900px) {
   .hero-grid,
   .simple-nav,
@@ -489,6 +556,10 @@ h3 {
   .section-header,
   .footer-row {
     align-items: flex-start;
+  }
+
+  .room-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
 }
@@ -566,6 +637,25 @@ h3 {
   .fact-row {
     grid-template-columns: 1fr;
     gap: 0.3rem;
+  }
+
+  .room-list {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-organizer span,
+  .footer-organizer a {
+    display: block;
+  }
+
+  .footer-organizer > * + * {
+    margin-left: 0;
+  }
+
+  .footer-organizer a::before,
+  .footer-organizer span + span::before {
+    content: "";
+    margin-right: 0;
   }
 }
 
