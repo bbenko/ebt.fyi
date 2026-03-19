@@ -1,6 +1,5 @@
 ---
 layout: layouts/base.njk
-description: A curated gathering for founders, developers, and operators focused on practical AI, emerging technology, and real business opportunities.
 ---
 {% set meetups = collections.meetups %}
 {% set featuredMeetup = meetups[0] %}
@@ -8,9 +7,46 @@ description: A curated gathering for founders, developers, and operators focused
 <section class="hero">
   <div class="container hero-grid hero-grid-single">
     <div class="hero-copy hero-copy-tight">
-      <p class="eyebrow">In person. Small room.</p>
+      <p class="eyebrow">East Bay Tech</p>
       <h1>Practical AI discussions in the East Bay</h1>
-      <p class="lead">For founders, developers, and operators comparing how AI is changing real work.</p>
+      <p class="lead">A small roundtable for founders, developers, and operators working with AI in the real world.</p>
+      <p class="hero-kicker">We compare what is improving product, operations, and infrastructure, what still breaks in production, and what strong peers are learning faster than benchmarks can show.</p>
+      {% set meetupCtaClass = "" %}
+      {% include "components/meetup-cta.njk" %}
+      <p class="hero-kicker">Seats are intentionally limited to keep discussion high-signal.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="room">
+  <div class="container">
+    <div class="section-header section-header-stack">
+      <div>
+        <p class="eyebrow">Who's in the room</p>
+        <h2>A curated group of founders, technical leaders, and operators.</h2>
+        <p class="section-intro">People come for practical signal and a room full of peers worth learning from.</p>
+      </div>
+    </div>
+
+    <div class="simple-home-card next-meetup-content">
+      <div class="next-meetup-grid">
+        <div class="next-meetup-block">
+          <p class="eyebrow">Who shows up</p>
+          <ul class="preview-list">
+            {% for item in site.attendeeProfiles %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+        <div class="next-meetup-block">
+          <p class="eyebrow">What they are doing with AI</p>
+          <ul class="preview-list">
+            {% for item in site.attendeeActivities %}
+            <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -21,8 +57,8 @@ description: A curated gathering for founders, developers, and operators focused
       <div>
         <p class="eyebrow">Next meetup</p>
         <h2>{{ featuredMeetup.data.title }}</h2>
-        <p class="meta-line">{{ featuredMeetup.data.meetupDate | formatMeetupDate }} | {{ featuredMeetup.data.location }}</p>
-        <p class="hero-kicker">Free to attend. Small room. Bring one real workflow or question.</p>
+        <p class="meta-line">{{ featuredMeetup.data.meetupDate | formatMeetupSchedule(featuredMeetup.data.meetupTime) }} | {{ featuredMeetup.data.location }}</p>
+        <p class="hero-kicker">Free to attend.</p>
       </div>
     </div>
 
@@ -30,7 +66,7 @@ description: A curated gathering for founders, developers, and operators focused
       <p class="section-intro next-meetup-intro">{{ featuredMeetup.data.agendaIntro }}</p>
       <div class="next-meetup-grid">
         <div class="next-meetup-block">
-          <p class="eyebrow">We'll cover</p>
+          <p class="eyebrow">What we discuss</p>
           <ul class="preview-list">
             {% for item in featuredMeetup.data.highlights %}
             <li>{{ item }}</li>
@@ -46,17 +82,8 @@ description: A curated gathering for founders, developers, and operators focused
           </ul>
         </div>
       </div>
-      <div class="hero-actions preview-actions">
-        <a class="button" href="{{ featuredMeetup.url | url }}">See this meetup's topics</a>
-        <a
-          href="{{ site.luma.eventUrl }}"
-          class="button button-muted luma-checkout--button"
-          data-luma-action="checkout"
-          data-luma-event-id="{{ site.luma.eventId }}"
-        >
-          RSVP
-        </a>
-      </div>
+      {% set meetupCtaClass = "preview-actions" %}
+      {% include "components/meetup-cta.njk" %}
     </div>
   </div>
 </section>
@@ -76,7 +103,7 @@ description: A curated gathering for founders, developers, and operators focused
       {% if meetup.url != featuredMeetup.url %}
       <a class="meetup-row" href="{{ meetup.url | url }}">
         <div>
-          <p class="row-date">{{ meetup.data.meetupDate | formatMeetupDate }}</p>
+          <p class="row-date">{{ meetup.data.meetupDate | formatMeetupSchedule(meetup.data.meetupTime) }}</p>
           <h3>{{ meetup.data.title }}</h3>
           <p class="row-summary">{{ meetup.data.summary }}</p>
         </div>
@@ -91,8 +118,8 @@ description: A curated gathering for founders, developers, and operators focused
 
 <section class="section section-accent" id="about">
   <div class="container">
-    <p class="eyebrow">About</p>
-    <h2>How East Bay Tech works</h2>
+    <p class="eyebrow">Who it's for</p>
+    <h2>For builders who want better peers, not generic takes.</h2>
     <p class="section-intro">{{ site.seminarIntro }}</p>
     <article class="panel simple-home-card">
       <dl class="fact-list">

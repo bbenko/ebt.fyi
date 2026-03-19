@@ -49,6 +49,7 @@ Each meetup file needs front matter plus Markdown body content:
 title: EBT x: title
 meetupId: x
 meetupDate: 2026-mm-dd
+meetupTime: 4:00 PM
 location: Lafayette, California
 summary: One-sentence summary for the homepage.
 ---
@@ -59,5 +60,4 @@ summary: One-sentence summary for the homepage.
   Short note about why it matters.
 ```
 
-`agendaIntro`, `highlights`, and `sessionPlan` are optional fields used by the featured meetup section on the homepage.
-
+`meetupTime`, `agendaIntro`, `highlights`, and `sessionPlan` are optional fields used by the homepage and meetup detail page.

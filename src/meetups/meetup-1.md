@@ -1,18 +1,19 @@
 ---
 title: "EBT #1: GPT-5.4, Anthropic 4.6, Agents, and AI Trust"
-meetupId: 0
+meetupId: 1
 meetupDate: 2026-03-20
+meetupTime: 4:00 PM
 location: Lafayette, California
-summary: A small East Bay discussion on GPT-5.4, Anthropic 4.6, agents, and public trust in AI.
-agendaIntro: A short reading packet, then discussion about what is changing in product work, operations, and infrastructure.
+summary: A practical East Bay AI roundtable on model releases, agent reliability, infrastructure, and trust.
+agendaIntro: "We compare what AI is actually changing in product, operations, and infrastructure, and what still breaks in real workflows."
 highlights:
-  - Which model releases look meaningful once you put them into real workflows.
-  - Where agent reliability and infrastructure still break down in practice.
-  - How trust, backlash, and market signals may shape adoption more than benchmarks.
+  - Which new model releases create real leverage, not just hype.
+  - Where agents and infrastructure fail in production, and how teams are mitigating it.
+  - How trust, user backlash, and market signals are shaping adoption faster than benchmarks.
 sessionPlan:
-  - Read the short packet before you come so everyone starts with the same context.
-  - Come ready to talk about what you are seeing in real work, not just online takes.
-  - Bring a short demo or workflow example if you want to share one.
+  - Read the short packet in advance if you want the context; it is optional and should take about 15 to 30 minutes.
+  - Bring one workflow, experiment, lesson, or open question from your own work.
+  - Discussion-first format, no slide decks, no spectators.
 ---
 ## Topics
 

@@ -43,6 +43,20 @@ module.exports = function (eleventyConfig) {
     }).format(date)
   })
 
+  eleventyConfig.addFilter("formatMeetupSchedule", (dateValue, timeValue) => {
+    const date = eleventyConfig.getFilter("formatMeetupDate")(dateValue)
+
+    if (!date) {
+      return ""
+    }
+
+    if (!timeValue) {
+      return date
+    }
+
+    return `${date} at ${timeValue}`
+  })
+
   eleventyConfig.addFilter("adjacentMeetups", (collection, currentUrl) => {
     const index = collection.findIndex((item) => item.url === currentUrl)
 

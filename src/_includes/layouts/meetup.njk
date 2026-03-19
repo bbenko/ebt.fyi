@@ -9,7 +9,7 @@ layout: layouts/base.njk
     <h1>{{ title }}</h1>
     <p class="detail-meta">
       <span>Date</span>
-      <strong>{{ meetupDate | formatMeetupDate }}</strong>
+      <strong>{{ meetupDate | formatMeetupSchedule(meetupTime) }}</strong>
       <span>Place</span>
       <strong>{{ location }}</strong>
     </p>

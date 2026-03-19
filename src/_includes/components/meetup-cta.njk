@@ -1,0 +1,11 @@
+<div class="hero-actions{% if meetupCtaClass %} {{ meetupCtaClass }}{% endif %}">
+  <a
+    href="{{ site.luma.eventUrl }}"
+    class="button luma-checkout--button"
+    data-luma-action="checkout"
+    data-luma-event-id="{{ site.luma.eventId }}"
+  >
+    RSVP for the Next Session
+  </a>
+  <a class="button button-muted" href="{{ featuredMeetup.url | url }}">See this meetup's topics</a>
+</div>

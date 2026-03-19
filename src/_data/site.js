@@ -1,30 +1,43 @@
 module.exports = {
   title: "East Bay Tech",
   description:
-    "A curated gathering for founders, developers, and operators focused on practical AI, emerging technology, and real business opportunities.",
+    "A practical East Bay AI roundtable for founders, developers, and operators comparing what changes real work, what still breaks in production, and what strong peers are learning.",
   url: "https://ebt.fyi",
   luma: {
     eventId: "evt-TZRrYFD3RcS1IK2",
     eventUrl: "https://luma.com/event/evt-TZRrYFD3RcS1IK2",
   },
   seminarIntro:
-    "Come prepared to compare what you are building, what is working, and what still feels unresolved. East Bay Tech is a small Socratic seminar built around discussion, not presentations.",
+    "East Bay Tech is a recurring local discussion for people using AI in real work. The value is not just one good conversation. It is building trusted relationships and sharper judgment over time.",
   seminarDetails: [
     {
-      label: "Format",
-      value: "Small, in-person Socratic seminar built around discussion, not presentations.",
-    },
-    {
       label: "Audience",
-      value: "Founders, developers, and operators who want practical local signal.",
+      value: "Founders, developers, and operators who care about practical AI, not generic commentary.",
     },
     {
-      label: "Room",
-      value: "Intentionally small, so people can compare real workflows instead of spectating.",
+      label: "Packet",
+      value: "Optional reading packet with about a dozen links and roughly 15 to 30 minutes of prep if you want the monthly overview.",
     },
     {
-      label: "Cost",
-      value: "Free with RSVP. Bring one real workflow, question, or lesson if you have one.",
+      label: "Format",
+      value: "Discussion-first, in person, no slide decks, no spectators.",
     },
+    {
+      label: "Community",
+      value: "A repeated local gathering for people who want trusted peers, better conversations, and stronger judgment over time.",
+    },
+  ],
+  attendeeProfiles: [
+    "Startup founders and builders who have shipped multiple AI products.",
+    "Leaders at established companies using OpenClaw automations, Codex, Claude Code, Copilot, Cursor, n8n, and other tools to amplify operations and grow their businesses.",
+    "Security researchers applying AI in risk and compliance contexts.",
+    "VPs of Engineering, CTOs, and product leaders building agentic apps and workflow automation.",
+    "HR leaders using AI to hire better, understand the job market, and spot real shifts in talent demand.",
+  ],
+  attendeeActivities: [
+    "Shipping AI products and integrating AI into production workflows.",
+    "Building agentic, vibe-coded apps and knowledge-graph-driven tools.",
+    "Using Claude Code and other assistants for administrative and technical execution.",
+    "Stress-testing where AI creates durable leverage and where it still breaks.",
   ],
 }
