@@ -17,6 +17,15 @@ sessionPlan:
 ---
 ## Topics
 
+### [Current model snapshot: Artificial Analysis](https://artificialanalysis.ai/)
+
+- This chart is our March 19, 2026 snapshot of the frontier model market, and we will start each meetup with a view like this.
+
+<figure>
+  <img src="/assets/artificialanalysis-intelligence-vs-cost-2026-03-19.png" alt="Artificial Analysis chart from March 19, 2026 comparing intelligence versus cost to run across frontier AI models." />
+  <figcaption>Artificial Analysis model snapshot, captured March 19, 2026.</figcaption>
+</figure>
+
 ### Model releases
 
 ### [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/)
@@ -65,6 +74,11 @@ sessionPlan:
 - Anthropic reportedly topped $19 billion in annualized revenue, shrinking the revenue gap much faster than many people expected.
 - Good question for the room: if Anthropic is catching up this quickly on coding-heavy workloads, what does durable moat actually look like?
 
+<figure>
+  <img src="/assets/openai-vs-anthropic-revenue-2026.png" alt="Chart showing Anthropic narrowing its annualized revenue gap with OpenAI, with OpenAI near 25 billion dollars and Anthropic near 19 billion dollars in early 2026." />
+  <figcaption>OpenAI vs. Anthropic annualized revenue, as reported in early 2026.</figcaption>
+</figure>
+
 ### [Anthropic vs. the Pentagon](https://techcrunch.com/2026/03/13/the-biggest-ai-stories-of-the-year-so-far/#:~:text=Anthropic%20vs)
 
 - TechCrunch frames 2026 so far as a mix of acquisitions, indie wins, public backlash, and high-stakes contracts.
@@ -77,6 +91,11 @@ sessionPlan:
 - Claude downloads rose while ChatGPT reviews turned more negative, suggesting values can move market behavior.
 - Useful discussion topic: how much does AI product adoption depend on trust, politics, and institutional alignment?
 
+<figure>
+  <img src="/assets/claude-vs-chatgpt-downloads-2026.png" alt="Chart of U.S. first-time mobile app downloads in February 2026 showing Claude rising sharply while ChatGPT ends the month lower." />
+  <figcaption>U.S. mobile app download trends for Claude and ChatGPT in February 2026.</figcaption>
+</figure>
+
 ### [OpenAI Unveils $110B in Funding, Expands AWS Partnership](https://aibusiness.com/foundation-models/openai-unveils-110billion-funding-expands-aws-partnership)
 
 - The headline ties model progress directly to massive infrastructure scale and capital intensity.
@@ -88,6 +107,11 @@ sessionPlan:
 - AI Business says Nvidia is packaging OpenClaw with a governance and safety layer for enterprise use.
 - The pitch is simple: companies want personal agents, but not the raw security posture of consumer-first agent stacks.
 - Worth discussing whether the winning agent platforms will be open, enterprise-hardened wrappers around open systems, or closed vertical stacks.
+
+<figure>
+  <img src="/assets/nvidia-nemoclaw-openclaw-2026.png" alt="NVIDIA presentation slide announcing the NemoClaw reference OpenClaw architecture for specialized agents." />
+  <figcaption>NVIDIA's NemoClaw and OpenClaw reference architecture slide.</figcaption>
+</figure>
 
 ### [Peter Steinberger: OpenClaw is becoming a foundation](https://x.com/steipete/status/2023154018714100102)
 
@@ -108,3 +132,8 @@ sessionPlan:
 - Fortune cites polling showing only 26% of respondents had a positive view of AI, while 46% were negative.
 - The article connects that skepticism to trust, privacy, social responsibility, and labor anxiety.
 - Good closing question: if public sentiment stays this negative, what does sustainable AI adoption actually look like?
+
+<figure>
+  <img src="/assets/people-hate-ai-2026.webp" alt="Chart showing public opinion toward AI, with negative sentiment outweighing positive sentiment." />
+  <figcaption>Public sentiment on AI, as captured in the archived Fortune piece.</figcaption>
+</figure>
