@@ -375,7 +375,7 @@ h3 {
 }
 
 .detail-shell {
-  max-width: 68rem;
+  max-width: none;
 }
 
 .preview-list {
@@ -416,8 +416,9 @@ h3 {
 }
 
 .detail-agenda {
-  max-width: 58rem;
-  margin: 0 auto;
+  max-width: none;
+  margin: 0;
+  padding-left: 0.75rem;
 }
 
 .prose p,
