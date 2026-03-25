@@ -2,10 +2,11 @@
 layout: layouts/base.njk
 ---
 {% set neighbors = collections.meetups | adjacentMeetups(page.url) %}
+{% set isUpcomingMeetup = collections.meetups[0] and collections.meetups[0].url == page.url %}
 
 <section class="section detail-hero">
   <div class="container detail-shell">
-    <p class="eyebrow">Upcoming meetup</p>
+    <p class="eyebrow">{% if isUpcomingMeetup %}Upcoming meetup{% else %}Past meetup{% endif %}</p>
     <h1>{{ title }}</h1>
     <p class="detail-meta">
       <span>Date</span>
@@ -13,6 +14,18 @@ layout: layouts/base.njk
       <span>Place</span>
       <strong>{{ location }}</strong>
     </p>
+    {% if luma and luma.eventId %}
+    <div class="hero-actions preview-actions">
+      <a
+        href="{{ luma.eventUrl }}"
+        class="button luma-checkout--button"
+        data-luma-action="checkout"
+        data-luma-event-id="{{ luma.eventId }}"
+      >
+        Register for this meetup
+      </a>
+    </div>
+    {% endif %}
   </div>
 </section>
 

@@ -4,8 +4,8 @@ module.exports = {
     "A practical East Bay AI roundtable for founders, developers, and operators comparing what changes real work, what still breaks in production, and what strong peers are learning.",
   url: "https://ebt.fyi",
   luma: {
-    eventId: "evt-TZRrYFD3RcS1IK2",
-    eventUrl: "https://luma.com/event/evt-TZRrYFD3RcS1IK2",
+    eventId: "evt-kpvYZrHeR7cANdz",
+    eventUrl: "https://luma.com/event/evt-kpvYZrHeR7cANdz",
   },
   organizer: {
     name: "Bozidar Benko",
