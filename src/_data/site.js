@@ -3,6 +3,9 @@ module.exports = {
   description:
     "A practical East Bay AI roundtable for founders, developers, and operators comparing what changes real work, what still breaks in production, and what strong peers are learning.",
   url: "https://ebt.fyi",
+  analytics: {
+    googleTagId: "G-EDPR4T0MZP",
+  },
   luma: {
     eventId: "evt-kpvYZrHeR7cANdz",
     eventUrl: "https://luma.com/event/evt-kpvYZrHeR7cANdz",

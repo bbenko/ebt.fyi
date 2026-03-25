@@ -13,6 +13,15 @@
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <meta name="theme-color" content="#f0eadc">
     <link rel="stylesheet" href="{{ '/assets/site.css' | url }}">
+    {% if site.analytics and site.analytics.googleTagId %}
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.googleTagId }}"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() { dataLayer.push(arguments) }
+      gtag('js', new Date())
+      gtag('config', '{{ site.analytics.googleTagId }}')
+    </script>
+    {% endif %}
   </head>
   <body>
     <div class="page-shell">
