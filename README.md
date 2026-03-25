@@ -61,3 +61,11 @@ summary: One-sentence summary for the homepage.
 ```
 
 `meetupTime`, `agendaIntro`, `highlights`, and `sessionPlan` are optional fields used by the homepage and meetup detail page.
+
+You can also add an optional `luma` object if a meetup should render a register button on its detail page:
+
+```md
+luma:
+  eventId: evt-xxxxxxxxxxxxxxx
+  eventUrl: https://luma.com/event/evt-xxxxxxxxxxxxxxx
+```
