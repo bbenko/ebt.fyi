@@ -60,6 +60,12 @@ Read whichever items look useful to you. The packet is optional, and skimming ev
 - Worth watching because it ties model quality directly to distribution, context from social products, and mainstream consumer reach.
 - Good room question: if a model is "good enough" and deeply integrated into Instagram, WhatsApp, Facebook, and glasses, how much does raw model ranking still matter?
 
+### [Anthropic just passed OpenAI in revenue while spending 4x less to train their models](https://www.saastr.com/anthropic-just-passed-openai-in-revenue-while-spending-4x-less-to-train-their-models/#:~:text=OpenAI%20confirmed%20%242%20billion%20in,billion%20at%20year%2Dend%202025.)
+
+- A useful discussion prompt on how the frontier labs are being valued and compared beyond raw model rankings.
+- Whether or not you fully buy the framing, it is a strong entry point for talking about capital efficiency, distribution, and what "winning" looks like in the model market.
+- Good room question: do the labs with the best models win, or the labs with the best revenue engine and distribution?
+
 ### [Gemma 4 in Google AI Edge Gallery](https://github.com/google-ai-edge/gallery)
 
 - Google AI Edge Gallery now features Gemma 4 for on-device use, including iPhone.
@@ -117,6 +123,17 @@ Read whichever items look useful to you. The packet is optional, and skimming ev
 - Good room question: if a lab thinks a model changes the cyber balance, who should get access first, and under what constraints?
 
 ### Research, open source, and developer tooling
+
+### [Codex for almost everything](https://openai.com/index/codex-for-almost-everything/)
+
+- OpenAI is positioning Codex as a broader coding and software-work product rather than a narrow autocomplete tool.
+- That makes this relevant for a practical discussion about how much of the developer workflow gets absorbed into model-native environments.
+- Good room question: what parts of software work are actually ready for "Codex for almost everything," and which parts still need tighter human control?
+
+<figure>
+  <img src="/assets/codex-for-almost-everything-2026.jpeg" alt="Screenshot of Codex controlling the Chess.app desktop application, showing accessibility actions, state inspection, and board interaction inside the Codex interface." />
+  <figcaption>Codex interacting with Chess.app as a concrete example of model-native software work extending beyond text generation.</figcaption>
+</figure>
 
 ### [Embarrassingly Simple Self-Distillation Improves Code Generation](https://arxiv.org/html/2604.01193v1)
 
