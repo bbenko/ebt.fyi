@@ -1,5 +1,5 @@
 ---
-title: "East Bay Tech #3: Practical AI for Founders, Developers & Operators"
+title: "EBT #3: Practical AI for Founders, Developers & Operators"
 meetupId: 3
 meetupDate: 2026-05-22
 meetupTime: 6:00 PM
