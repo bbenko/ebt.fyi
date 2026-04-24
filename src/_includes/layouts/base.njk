@@ -11,7 +11,7 @@
     <meta property="og:description" content="{{ summary or description or site.description }}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta name="theme-color" content="#f0eadc">
+    <meta name="theme-color" content="#f5f1e8">
     <link rel="stylesheet" href="{{ '/assets/site.css' | url }}">
     {% if site.analytics and site.analytics.googleTagId %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.googleTagId }}"></script>
@@ -24,20 +24,30 @@
     {% endif %}
   </head>
   <body>
+    {% set navMeetup = collections.meetups[0] %}
+    {% set navLuma = false %}
+    {% if navMeetup and navMeetup.data.luma and navMeetup.data.luma.eventUrl %}
+      {% set navLuma = navMeetup.data.luma %}
+    {% endif %}
     <div class="page-shell">
       <header class="site-header">
         <div class="container header-row">
           <a class="brand" href="{{ '/' | url }}">{{ site.title }}</a>
           <nav class="site-nav" aria-label="Primary">
+            <a href="{{ '/#community' | url }}">Community</a>
             <a href="{{ '/#meetups' | url }}">Meetups</a>
+            {% if navLuma %}
             <a
               class="button button-small luma-checkout--button"
-              href="{{ site.luma.eventUrl }}"
+              href="{{ navLuma.eventUrl }}"
               data-luma-action="checkout"
-              data-luma-event-id="{{ site.luma.eventId }}"
+              data-luma-event-id="{{ navLuma.eventId }}"
             >
               RSVP
             </a>
+            {% elif navMeetup %}
+            <a class="button button-small" href="{{ navMeetup.url | url }}">Next</a>
+            {% endif %}
           </nav>
         </div>
       </header>
@@ -75,7 +85,7 @@
         </div>
       </footer>
     </div>
-    {% if site.luma and site.luma.eventId %}
+    {% if navLuma and navLuma.eventId %}
     <script id="luma-checkout" src="https://embed.lu.ma/checkout-button.js"></script>
     {% endif %}
     <script>

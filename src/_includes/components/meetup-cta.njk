@@ -1,11 +1,15 @@
 <div class="hero-actions{% if meetupCtaClass %} {{ meetupCtaClass }}{% endif %}">
+  {% if featuredMeetup.data.luma and featuredMeetup.data.luma.eventUrl %}
   <a
-    href="{{ site.luma.eventUrl }}"
+    href="{{ featuredMeetup.data.luma.eventUrl }}"
     class="button luma-checkout--button"
     data-luma-action="checkout"
-    data-luma-event-id="{{ site.luma.eventId }}"
+    data-luma-event-id="{{ featuredMeetup.data.luma.eventId }}"
   >
     RSVP for the next meetup
   </a>
   <a class="button button-muted" href="{{ featuredMeetup.url | url }}">See meetup topics</a>
+  {% else %}
+  <a class="button" href="{{ featuredMeetup.url | url }}">See meetup topics</a>
+  {% endif %}
 </div>

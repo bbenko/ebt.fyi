@@ -5,15 +5,24 @@ layout: layouts/base.njk
 {% set featuredMeetup = meetups[0] %}
 
 <section class="hero">
-  <div class="container hero-grid hero-grid-single">
-    <div class="hero-copy hero-copy-tight">
+  <div class="hero-backdrop" aria-hidden="true">
+    <img class="hero-backdrop-chart" src="{{ '/assets/artificialanalysis-intelligence-vs-cost-2026-04-16.svg' | url }}" alt="">
+    <img class="hero-backdrop-phone" src="{{ '/assets/google-ai-edge-gallery-gemma-4-iphone.svg' | url }}" alt="">
+    <img class="hero-backdrop-agents" src="{{ '/assets/agents-by-domain-tool-calls-2026.svg' | url }}" alt="">
+  </div>
+  <div class="container hero-inner">
+    <div class="hero-copy">
       <p class="eyebrow">East Bay Tech</p>
-      <h1>Practical AI discussions in the East Bay</h1>
-      <p class="lead">A small roundtable for founders, developers, and operators working with AI in the real world.</p>
+      <h1>East Bay Tech</h1>
+      <p class="lead">Practical AI discussions in the East Bay for founders, developers, and operators working with AI in the real world.</p>
       <p class="hero-kicker">We compare what is improving product, operations, and infrastructure, what still breaks in production, and what strong peers are learning faster than benchmarks can show.</p>
       {% set meetupCtaClass = "" %}
       {% include "components/meetup-cta.njk" %}
-      <p class="hero-kicker">Seats are intentionally limited to keep discussion high-signal.</p>
+      <div class="hero-signals" aria-label="Meetup highlights">
+        <span>Small room</span>
+        <span>Discussion first</span>
+        <span>Lafayette, CA</span>
+      </div>
     </div>
   </div>
 </section>
@@ -28,7 +37,7 @@ layout: layouts/base.njk
       </div>
     </div>
 
-    <div class="simple-home-card next-meetup-content">
+    <div class="simple-home-card next-meetup-content room-card">
       <div class="next-meetup-grid next-meetup-grid-single">
         <div class="next-meetup-block">
           <p class="eyebrow">Attendee mix</p>
@@ -54,28 +63,36 @@ layout: layouts/base.njk
       </div>
     </div>
 
-    <div class="simple-home-card next-meetup-content">
-      <p class="section-intro next-meetup-intro">{{ featuredMeetup.data.agendaIntro }}</p>
-      <div class="next-meetup-grid">
-        <div class="next-meetup-block">
-          <p class="eyebrow">What we discuss</p>
-          <ul class="preview-list">
-            {% for item in featuredMeetup.data.highlights %}
-            <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-        <div class="next-meetup-block">
-          <p class="eyebrow">Format</p>
-          <ul class="preview-list">
-            {% for item in featuredMeetup.data.sessionPlan %}
-            <li>{{ item }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+    <div class="event-showcase next-meetup-content">
+      <div class="event-summary">
+        <p class="eyebrow">At a glance</p>
+        <p class="event-date">{{ featuredMeetup.data.meetupDate | formatMeetupSchedule(featuredMeetup.data.meetupTime) }}</p>
+        <p class="event-location">{{ featuredMeetup.data.location }}</p>
+        <p class="hero-kicker">Seats are intentionally limited to keep discussion high-signal.</p>
       </div>
-      {% set meetupCtaClass = "preview-actions" %}
-      {% include "components/meetup-cta.njk" %}
+      <div class="event-agenda">
+        <p class="section-intro next-meetup-intro">{{ featuredMeetup.data.agendaIntro }}</p>
+        <div class="next-meetup-grid">
+          <div class="next-meetup-block">
+            <p class="eyebrow">What we discuss</p>
+            <ul class="preview-list">
+              {% for item in featuredMeetup.data.highlights %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="next-meetup-block">
+            <p class="eyebrow">Format</p>
+            <ul class="preview-list">
+              {% for item in featuredMeetup.data.sessionPlan %}
+              <li>{{ item }}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {% set meetupCtaClass = "preview-actions" %}
+        {% include "components/meetup-cta.njk" %}
+      </div>
     </div>
   </div>
 </section>

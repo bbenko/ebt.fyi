@@ -14,7 +14,7 @@ layout: layouts/base.njk
       <span>Place</span>
       <strong>{{ location }}</strong>
     </p>
-    {% if luma and luma.eventId %}
+    {% if isUpcomingMeetup and luma and luma.eventId %}
     <div class="hero-actions preview-actions">
       <a
         href="{{ luma.eventUrl }}"

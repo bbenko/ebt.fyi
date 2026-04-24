@@ -6,10 +6,6 @@ module.exports = {
   analytics: {
     googleTagId: "G-EDPR4T0MZP",
   },
-  luma: {
-    eventId: "evt-kpvYZrHeR7cANdz",
-    eventUrl: "https://luma.com/event/evt-kpvYZrHeR7cANdz",
-  },
   organizer: {
     name: "Bozidar Benko",
     linkedinUrl: "https://www.linkedin.com/in/bozidarbenko/",
