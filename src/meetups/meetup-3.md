@@ -5,7 +5,7 @@ meetupDate: 2026-05-22
 meetupTime: 6:00 PM
 location: Lafayette, California
 summary: A curated East Bay gathering for founders, developers, and operators exploring practical AI, emerging technology, and new business opportunities.
-agendaIntro: "We are still building the list, but May is already starting with strong AI news."
+agendaIntro: "Agent Skills, model launches, and practical AI workflow lessons for builders and operators."
 highlights:
   - Meet smart people building, shipping, and improving real work with AI.
   - Share practical AI use cases across industries like healthcare, legal, real estate, operations, and software.
@@ -20,9 +20,27 @@ luma:
 ---
 East Bay Tech brings founders, developers, and operators together for practical AI conversations grounded in real work.
 
-## Topics
+## Workflow Showcases
 
-We are still building this list, but May is already starting with strong AI news. Skim whatever looks useful.
+### [Agent Skills](https://agentskills.io/home)
+
+- Agent Skills are a lightweight way to give an LLM or agent runner reusable expertise: instructions, scripts, references, templates, and workflow context packaged in a small folder.
+- The theme: make your agent better at real work by adding skills instead of rewriting prompts every time.
+
+<figure>
+  <img src="/assets/neo-i-know-kung-fu-agent-skills.jpg" alt="Neo from The Matrix with the subtitle: I know kung fu." />
+  <figcaption>Agent Skills are the practical version of "I know kung fu": package the workflow once, then let the agent load it when needed.</figcaption>
+</figure>
+
+### Workflow 1: Multiple calendar management
+
+- Multiple calendar management using different skills.
+
+### [Workflow 2: mvanhorn/last30days-skill](https://github.com/mvanhorn/last30days-skill)
+
+- This skill researches a topic across Reddit, X, YouTube, Hacker News, Polymarket, GitHub, and the web, then synthesizes what people actually engaged with.
+
+## Topics
 
 ### [Current model snapshot: Artificial Analysis](https://artificialanalysis.ai/)
 
