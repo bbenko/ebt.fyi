@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2048" height="1012" viewBox="0 0 2048 1012" role="img" aria-labelledby="title desc">
+  <title id="title">Artificial Analysis Intelligence versus Cost to Run, May 22 2026</title>
+  <desc id="desc">Scatter plot of frontier AI models comparing Artificial Analysis Intelligence Index on the vertical axis and Cost to Run Intelligence Index on the horizontal axis. The most attractive quadrant is shaded in green in the upper left.</desc>
+  <rect width="2048" height="1012" fill="#ffffff"/>
+
+  <style>
+    .title { font: 38px Georgia, "Times New Roman", serif; fill: #111; }
+    .subtitle { font: 22px Arial, Helvetica, sans-serif; fill: #8a8a8a; font-weight: 700; }
+    .ui { font: 28px Arial, Helvetica, sans-serif; fill: #111; }
+    .legend { font: 27px Arial, Helvetica, sans-serif; fill: #111; }
+    .axis { font: 27px Arial, Helvetica, sans-serif; fill: #333; font-weight: 700; }
+    .tick { font: 20px Arial, Helvetica, sans-serif; fill: #4a4a4a; }
+    .label { font: 24px Arial, Helvetica, sans-serif; fill: #666; font-weight: 700; paint-order: stroke; stroke: #fff; stroke-width: 5px; stroke-linejoin: round; }
+    .brand { font: 32px Georgia, "Times New Roman", serif; fill: #555; font-weight: 700; }
+  </style>
+
+  <text class="title" x="16" y="48">Intelligence vs. Cost to Run Artificial Analysis Intelligence Index</text>
+  <text class="subtitle" x="16" y="87">Artificial Analysis Intelligence Index - Cost to run Intelligence Index</text>
+
+  <rect x="1412" y="10" width="420" height="56" rx="16" fill="#f5f5f5" stroke="#d7d7d7"/>
+  <text class="ui" x="1435" y="45">28 of 522 models</text>
+  <text class="ui" x="1788" y="45">v</text>
+  <rect x="1840" y="10" width="55" height="56" rx="14" fill="#fff" stroke="#d7d7d7"/>
+  <text class="ui" x="1855" y="45">::</text>
+  <rect x="1903" y="10" width="56" height="56" rx="14" fill="#fff" stroke="#d7d7d7"/>
+  <text class="ui" x="1917" y="45">link</text>
+  <rect x="1966" y="10" width="57" height="56" rx="14" fill="#fff" stroke="#d7d7d7"/>
+  <text class="ui" x="1982" y="45">img</text>
+
+  <circle cx="1457" cy="102" r="21" fill="#f5f5f5" stroke="#d7d7d7"/>
+  <text class="ui" x="1443" y="112">+</text>
+  <text class="ui" x="1492" y="109">Add model from specific provider</text>
+
+  <rect x="16" y="170" width="64" height="29" rx="3" fill="#dff6d8"/>
+  <text class="legend" x="88" y="194" font-weight="700">Most attractive quadrant</text>
+
+  <g class="legend">
+    <rect x="31" y="213" width="21" height="21" rx="4" fill="#ff7a18"/><text x="60" y="233">Alibaba</text>
+    <rect x="175" y="213" width="21" height="21" rx="4" fill="#f59e0b"/><text x="204" y="233">Amazon</text>
+    <rect x="324" y="213" width="21" height="21" rx="4" fill="#d57c5d"/><text x="353" y="233">Anthropic</text>
+    <rect x="494" y="213" width="21" height="21" rx="4" fill="#334eea"/><text x="523" y="233">DeepSeek</text>
+    <rect x="671" y="213" width="21" height="21" rx="4" fill="#39aa56"/><text x="700" y="233">Google</text>
+    <rect x="811" y="213" width="21" height="21" rx="4" fill="#3476f2"/><text x="840" y="233">Kimi</text>
+    <rect x="919" y="213" width="21" height="21" rx="4" fill="#ec3c75"/><text x="948" y="233">MiniMax</text>
+    <rect x="1073" y="213" width="21" height="21" rx="4" fill="#ff6f0d"/><text x="1102" y="233">Mistral</text>
+    <rect x="1208" y="213" width="21" height="21" rx="4" fill="#86bb35"/><text x="1237" y="233">NVIDIA</text>
+    <rect x="1347" y="213" width="21" height="21" rx="4" fill="#202020"/><text x="1376" y="233">OpenAI</text>
+    <rect x="1491" y="213" width="21" height="21" rx="4" fill="#786bd9"/><text x="1520" y="233">xAI</text>
+    <rect x="1585" y="213" width="21" height="21" rx="4" fill="#ff6f0d"/><text x="1614" y="233">Xiaomi</text>
+  </g>
+
+  <rect x="141" y="277" width="924" height="279" fill="#dff6d8"/>
+  <rect x="1065" y="556" width="923" height="280" fill="#f5f5f5"/>
+
+  <g stroke="#d8d8d8" stroke-width="1">
+    <line x1="141" y1="277" x2="141" y2="836"/>
+    <line x1="141" y1="277" x2="1988" y2="277"/>
+    <line x1="141" y1="556" x2="1988" y2="556"/>
+    <line x1="141" y1="836" x2="1988" y2="836"/>
+  </g>
+
+  <g class="tick">
+    <text x="102" y="285">65</text>
+    <text x="102" y="347">60</text>
+    <text x="102" y="409">55</text>
+    <text x="102" y="471">50</text>
+    <text x="102" y="533">45</text>
+    <text x="102" y="595">40</text>
+    <text x="102" y="657">35</text>
+    <text x="102" y="719">30</text>
+    <text x="102" y="781">25</text>
+    <text x="102" y="843">20</text>
+  </g>
+
+  <g class="tick">
+    <text x="293" y="871">32</text>
+    <text x="478" y="871">64</text>
+    <text x="658" y="871">128</text>
+    <text x="845" y="871">256</text>
+    <text x="1031" y="871">512</text>
+    <text x="1213" y="871">1.02k</text>
+    <text x="1398" y="871">2.05k</text>
+    <text x="1584" y="871">4.10k</text>
+    <text x="1770" y="871">8.19k</text>
+    <text x="1954" y="871">16.4k</text>
+  </g>
+
+  <text class="axis" x="46" y="734" transform="rotate(-90 46 734)">Artificial Analysis Intelligence Index</text>
+  <text class="axis" x="783" y="916">Cost to Run Intelligence Index (USD, Log Scale)</text>
+
+  <g stroke="#c9c9c9" stroke-width="4" fill="none">
+    <line x1="168" y1="779" x2="190" y2="763"/>
+    <line x1="504" y1="670" x2="528" y2="716"/>
+    <line x1="702" y1="636" x2="720" y2="687"/>
+    <line x1="761" y1="468" x2="787" y2="531"/>
+    <line x1="980" y1="423" x2="995" y2="479"/>
+    <line x1="1021" y1="415" x2="1013" y2="360"/>
+    <line x1="1024" y1="640" x2="1040" y2="688"/>
+    <line x1="1101" y1="623" x2="1124" y2="634"/>
+    <line x1="1214" y1="414" x2="1254" y2="494"/>
+    <line x1="1278" y1="381" x2="1299" y2="348"/>
+    <line x1="1347" y1="395" x2="1367" y2="493"/>
+    <line x1="1554" y1="337" x2="1584" y2="396"/>
+    <line x1="1668" y1="372" x2="1694" y2="348"/>
+  </g>
+
+  <g>
+    <circle cx="168" cy="779" r="14" fill="#202020"/>
+    <circle cx="504" cy="670" r="14" fill="#202020"/>
+    <circle cx="535" cy="566" r="14" fill="#334eea"/>
+    <circle cx="643" cy="506" r="14" fill="#334eea"/>
+    <circle cx="702" cy="636" r="14" fill="#86bb35"/>
+    <circle cx="761" cy="468" r="14" fill="#ec3c75"/>
+    <circle cx="875" cy="444" r="14" fill="#334eea"/>
+    <circle cx="980" cy="423" r="14" fill="#786bd9"/>
+    <circle cx="994" cy="524" r="14" fill="#ff6f0d"/>
+    <circle cx="1021" cy="415" r="14" fill="#ff6f0d"/>
+    <circle cx="1024" cy="640" r="14" fill="#f59e0b"/>
+    <circle cx="1101" cy="623" r="14" fill="#d57c5d"/>
+    <circle cx="1199" cy="374" r="14" fill="#39aa56"/>
+    <circle cx="1214" cy="414" r="14" fill="#3476f2"/>
+    <circle cx="1230" cy="593" r="14" fill="#ff6f0d"/>
+    <circle cx="1278" cy="381" r="14" fill="#ff6f0d"/>
+    <circle cx="1311" cy="473" r="14" fill="#202020"/>
+    <circle cx="1347" cy="395" r="14" fill="#39aa56"/>
+    <circle cx="1510" cy="378" r="14" fill="#202020"/>
+    <circle cx="1554" cy="337" r="14" fill="#202020"/>
+    <circle cx="1615" cy="443" r="14" fill="#d57c5d"/>
+    <circle cx="1668" cy="372" r="14" fill="#d57c5d"/>
+  </g>
+
+  <g class="label">
+    <text x="183" y="780">gpt-oss-20B (high)?</text>
+    <text x="520" y="735">gpt-oss-120b (high)?</text>
+    <text x="550" y="570">DeepSeek V3.2?</text>
+    <text x="657" y="511">DeepSeek V4 Flash (Max)?</text>
+    <text x="717" y="701">NVIDIA Nemotron 3 Super?</text>
+    <text x="788" y="545">MiniMax-M2.7?</text>
+    <text x="896" y="451">DeepSeek V4 Pro (Max)?</text>
+    <text x="996" y="487">Grok 4.3 (high)?</text>
+    <text x="1010" y="523">Qwen3.5 397B A17B?</text>
+    <text x="1006" y="377">MiMo-V2.5-Pro?</text>
+    <text x="1040" y="704">Nova 2.0 Pro Preview (medium)?</text>
+    <text x="1121" y="639">Claude 4.5 Haiku?</text>
+    <text x="1232" y="445">Gemini 3.1 Pro Preview?</text>
+    <text x="1253" y="482">Kimi K2.6?</text>
+    <text x="1242" y="599">Mistral Medium 3.5?</text>
+    <text x="1299" y="362">Qwen3.7 Max?</text>
+    <text x="1325" y="477">GPT-5.4 mini (xhigh)?</text>
+    <text x="1385" y="510">Gemini 3.5 Flash?</text>
+    <text x="1566" y="493">GPT-5.4 (xhigh)?</text>
+    <text x="1565" y="405">GPT-5.5 (xhigh)?</text>
+    <text x="1630" y="446">Claude Sonnet 4.6 (max)?</text>
+    <text x="1694" y="361">Claude Opus 4.7 (max)?</text>
+  </g>
+
+  <text x="1736" y="305" fill="#8d6cff" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700">AA</text>
+  <text class="brand" x="1766" y="305">Artificial Analysis</text>
+  <text class="subtitle" x="20" y="982" font-size="20">? Reasoning models are indicated by a lightbulb icon.</text>
+</svg>

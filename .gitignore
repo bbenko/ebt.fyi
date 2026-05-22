@@ -7,3 +7,8 @@ yarn-debug.log*
 yarn-error.log*
 .env
 .env.*
+
+# Local agent/tooling state
+.agents/
+.last30days/
+skills-lock.json
