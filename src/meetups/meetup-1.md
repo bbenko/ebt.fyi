@@ -14,6 +14,10 @@ sessionPlan:
   - Read the short packet in advance if you want the context; it is optional and should take about 15 to 30 minutes.
   - Bring one workflow, experiment, lesson, or open question from your own work.
   - Discussion-first format, no slide decks, no spectators.
+heroArt:
+  - /assets/artificialanalysis-intelligence-vs-cost-2026-03-19.png
+  - /assets/openai-vs-anthropic-revenue-2026.png
+  - /assets/nvidia-nemoclaw-openclaw-2026.png
 ---
 ## Topics
 

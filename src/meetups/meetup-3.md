@@ -17,6 +17,10 @@ sessionPlan:
 luma:
   eventId: evt-sOcbxW1B9ATdqkR
   eventUrl: https://luma.com/vw0qvd9x
+heroArt:
+  - /assets/artificialanalysis-intelligence-vs-cost-2026-05-22.svg
+  - /assets/ai-workflow-models-marcel-velica-2026-05-22.jpg
+  - /assets/agents-by-domain-tool-calls-2026.svg
 ---
 East Bay Tech brings founders, developers, and operators together for practical AI conversations grounded in real work.
 

@@ -6,16 +6,16 @@ layout: layouts/base.njk
 
 <section class="hero">
   <div class="hero-backdrop" aria-hidden="true">
-    <img class="hero-backdrop-chart" src="{{ '/assets/artificialanalysis-intelligence-vs-cost-2026-04-16.svg' | url }}" alt="">
-    <img class="hero-backdrop-phone" src="{{ '/assets/google-ai-edge-gallery-gemma-4-iphone.svg' | url }}" alt="">
+    <img class="hero-backdrop-chart" src="{{ '/assets/artificialanalysis-intelligence-vs-cost-2026-05-22.svg' | url }}" alt="">
     <img class="hero-backdrop-agents" src="{{ '/assets/agents-by-domain-tool-calls-2026.svg' | url }}" alt="">
+    <img class="hero-backdrop-workflow" src="{{ '/assets/ai-workflow-models-marcel-velica-2026-05-22.jpg' | url }}" alt="">
   </div>
   <div class="container hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow">East Bay Tech</p>
+      <p class="salutation">Hello.</p>
       <h1>East Bay Tech</h1>
       <p class="lead">Practical AI discussions in the East Bay for founders, developers, and operators working with AI in the real world.</p>
-      <p class="hero-kicker">We compare what is improving product, operations, and infrastructure, what still breaks in production, and what strong peers are learning faster than benchmarks can show.</p>
+      <p class="hero-kicker">A small room in Lafayette for comparing what improves product, operations, and infrastructure, what still breaks in production, and what strong peers are learning faster than benchmarks can show.</p>
       {% set meetupCtaClass = "" %}
       {% include "components/meetup-cta.njk" %}
       <div class="hero-signals" aria-label="Meetup highlights">
@@ -29,52 +29,34 @@ layout: layouts/base.njk
 
 <section class="section" id="community">
   <div class="container">
-    <div class="section-header section-header-stack">
-      <div>
-        <p class="eyebrow">Community</p>
-        <h2>The kinds of people you will meet.</h2>
-        <p class="section-intro">This is a small room for people using AI in real work, not spectators looking for generic takes. The mix matters as much as the topic list: strong operators, technical builders, and domain experts who can compare notes at a useful level.</p>
-      </div>
+    <div class="section-copy">
+      <h2>The kinds of people you will meet.</h2>
+      <p class="section-intro">This is a small room for people using AI in real work, not spectators looking for generic takes. The mix matters as much as the topic list: strong operators, technical builders, and domain experts who can compare notes at a useful level.</p>
     </div>
 
-    <div class="simple-home-card next-meetup-content room-card">
-      <div class="next-meetup-grid next-meetup-grid-single">
-        <div class="next-meetup-block">
-          <p class="eyebrow">Attendee mix</p>
-          <ul class="preview-list room-list">
-            {% for item in site.attendeeHighlights %}
-            <li><strong>{{ item.who }}</strong> {{ item.aiWork }}</li>
-            {% endfor %}
-          </ul>
-        </div>
-      </div>
-    </div>
+    <ul class="preview-list room-list">
+      {% for item in site.attendeeHighlights %}
+      <li><strong>{{ item.who }}</strong> <span>{{ item.aiWork }}</span></li>
+      {% endfor %}
+    </ul>
   </div>
 </section>
 
 <section class="section section-current" id="meetups">
   <div class="container">
-    <div class="section-header section-header-stack">
-      <div>
-        <p class="eyebrow">Next meetup</p>
-        <h2>{{ featuredMeetup.data.title }}</h2>
-        <p class="meta-line">{{ featuredMeetup.data.meetupDate | formatMeetupSchedule(featuredMeetup.data.meetupTime) }} | {{ featuredMeetup.data.location }}</p>
-        <p class="hero-kicker">Free to attend.</p>
-      </div>
-    </div>
-
     <div class="event-showcase next-meetup-content">
       <div class="event-summary">
-        <p class="eyebrow">At a glance</p>
+        <p class="micro-label">Next meetup</p>
         <p class="event-date">{{ featuredMeetup.data.meetupDate | formatMeetupSchedule(featuredMeetup.data.meetupTime) }}</p>
         <p class="event-location">{{ featuredMeetup.data.location }}</p>
-        <p class="hero-kicker">Seats are intentionally limited to keep discussion high-signal.</p>
+        <p class="event-note">Free to attend. Seats stay limited so the discussion can stay specific.</p>
       </div>
       <div class="event-agenda">
+        <h2>{{ featuredMeetup.data.title }}</h2>
         <p class="section-intro next-meetup-intro">{{ featuredMeetup.data.agendaIntro }}</p>
         <div class="next-meetup-grid">
           <div class="next-meetup-block">
-            <p class="eyebrow">What we discuss</p>
+            <p class="micro-label">What we discuss</p>
             <ul class="preview-list">
               {% for item in featuredMeetup.data.highlights %}
               <li>{{ item }}</li>
@@ -82,7 +64,7 @@ layout: layouts/base.njk
             </ul>
           </div>
           <div class="next-meetup-block">
-            <p class="eyebrow">Format</p>
+            <p class="micro-label">Format</p>
             <ul class="preview-list">
               {% for item in featuredMeetup.data.sessionPlan %}
               <li>{{ item }}</li>
@@ -100,11 +82,9 @@ layout: layouts/base.njk
 {% if meetups.length > 1 %}
 <section class="section" id="archive">
   <div class="container">
-    <div class="section-header">
-      <div>
-        <p class="eyebrow">Past meetups</p>
-        <h2>Archive</h2>
-      </div>
+    <div class="section-copy">
+      <h2>Archive</h2>
+      <p class="section-intro">Previous discussion packets, kept as a record of what the room was tracking at the time.</p>
     </div>
 
     <div class="meetup-list">

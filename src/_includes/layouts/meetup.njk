@@ -4,9 +4,16 @@ layout: layouts/base.njk
 {% set neighbors = collections.meetups | adjacentMeetups(page.url) %}
 {% set isUpcomingMeetup = collections.meetups[0] and collections.meetups[0].url == page.url %}
 
-<section class="section detail-hero">
+<section class="section detail-hero{% if heroArt %} detail-hero-visual{% endif %}">
+  {% if heroArt %}
+  <div class="detail-hero-art" aria-hidden="true">
+    {% for item in heroArt %}
+    <img class="detail-hero-art-image detail-hero-art-image-{{ loop.index }}" src="{{ item | url }}" alt="">
+    {% endfor %}
+  </div>
+  {% endif %}
   <div class="container detail-shell">
-    <p class="eyebrow">{% if isUpcomingMeetup %}Upcoming meetup{% else %}Past meetup{% endif %}</p>
+    <p class="micro-label">{% if isUpcomingMeetup %}Upcoming meetup{% else %}Past meetup{% endif %}</p>
     <h1>{{ title }}</h1>
     <p class="detail-meta">
       <span>Date</span>
@@ -32,17 +39,23 @@ layout: layouts/base.njk
 <section class="section">
   <div class="container detail-shell">
     <div class="detail-main">
-      <article class="prose panel detail-agenda">
+      <article class="prose detail-agenda">
         {{ content | safe }}
       </article>
 
       {% if neighbors.newer or neighbors.older %}
       <nav class="simple-nav" aria-label="Meetup navigation">
         {% if neighbors.newer %}
-        <a href="{{ neighbors.newer.url | url }}">Newer: {{ neighbors.newer.data.title }}</a>
+        <div class="simple-nav-item">
+          <a href="{{ neighbors.newer.url | url }}" aria-label="Newer meetup: {{ neighbors.newer.data.title }}">Newer meetup</a>
+          <span class="simple-nav-title">{{ neighbors.newer.data.title }}</span>
+        </div>
         {% endif %}
         {% if neighbors.older %}
-        <a href="{{ neighbors.older.url | url }}">Older: {{ neighbors.older.data.title }}</a>
+        <div class="simple-nav-item">
+          <a href="{{ neighbors.older.url | url }}" aria-label="Older meetup: {{ neighbors.older.data.title }}">Older meetup</a>
+          <span class="simple-nav-title">{{ neighbors.older.data.title }}</span>
+        </div>
         {% endif %}
       </nav>
       {% endif %}

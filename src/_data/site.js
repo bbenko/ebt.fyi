@@ -3,6 +3,7 @@ module.exports = {
   description:
     "A practical East Bay AI roundtable for founders, developers, and operators comparing what changes real work, what still breaks in production, and what strong peers are learning.",
   url: "https://ebt.fyi",
+  themeColor: "oklch(97% 0.006 255)",
   analytics: {
     googleTagId: "G-EDPR4T0MZP",
   },

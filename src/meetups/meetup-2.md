@@ -17,6 +17,10 @@ sessionPlan:
 luma:
   eventId: evt-kpvYZrHeR7cANdz
   eventUrl: https://luma.com/event/evt-kpvYZrHeR7cANdz
+heroArt:
+  - /assets/artificialanalysis-intelligence-vs-cost-2026-04-16.svg
+  - /assets/google-ai-edge-gallery-gemma-4-iphone.svg
+  - /assets/agents-by-domain-tool-calls-2026.svg
 ---
 East Bay Tech is a small East Bay meetup for founders, developers, and operators who want to talk about how AI is actually showing up in their work.
 
