@@ -5,13 +5,13 @@ meetupDate: 2026-06-26
 meetupTime: 6:00 PM
 location: Lafayette, California
 summary: A curated East Bay gathering for founders, developers, and operators exploring practical AI, emerging technology, and new business opportunities.
-agendaIntro: "Workflow showcases, model launches, and practical AI lessons for builders and operators. The list is building."
+agendaIntro: "Model launches, policy shifts, and practical AI lessons for builders and operators. The list is building."
 highlights:
   - Meet smart people building, shipping, and improving real work with AI.
   - Share practical AI use cases across industries like healthcare, legal, real estate, operations, and software.
   - Follow the latest model launches, essays, and field notes as the discussion list builds.
 sessionPlan:
-  - Workflow showcases will be populated later as examples come in.
+  - The discussion list will keep building as more examples come in.
   - The topic list is building and will be finalized closer to the event.
   - Practical examples, real questions, and useful lessons from the room.
 luma:
@@ -20,19 +20,21 @@ luma:
 ---
 East Bay Tech brings founders, developers, and operators together for practical AI conversations grounded in real work.
 
-## Workflow Showcases
-
-### Workflow 1: To be announced
-
-- Placeholder. We will populate this workflow later.
-
-### Workflow 2: To be announced
-
-- Placeholder. We will populate this workflow later.
-
 ## Topics
 
 These are early discussion starters for June 26, 2026. The list is building, and we will keep adding context before the meetup.
+
+### [Statement on the US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access)
+
+- Anthropic says a US government export control directive required it to suspend Fable 5 and Mythos 5 access for all customers, while leaving access to other Anthropic models unaffected.
+- The post frames the dispute around model safeguards, jailbreak risk, and whether a narrow cybersecurity concern should justify recalling a widely deployed commercial model.
+- Good room question: what should a clear, fair process for pausing frontier model access look like when national security, customer reliability, and public technical evidence all collide?
+
+### [Satya Nadella on tokenmaxxing and choosing the right model](https://x.com/satyanadella/status/2066182223213293753)
+
+- Nadella points to a practical AI cost question inside serious organizations: not every task needs the most expensive or capable frontier model.
+- The useful shift is from "use more AI" to "match the model, tool, and workflow to the value of the work."
+- Good room question: how should teams decide when a frontier model is worth it, and when a cheaper, faster, or narrower system is the better engineering choice?
 
 ### [Introducing Claude Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8)
 
