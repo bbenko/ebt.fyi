@@ -39,18 +39,6 @@ These are early discussion starters for June 26, 2026. The list is building, and
   <figcaption>Artificial Analysis model snapshot, captured June 26, 2026. The comparison point for meetup #4 is how quickly the attractive quadrant and frontier cluster changed since meetup #3.</figcaption>
 </figure>
 
-### [Statement on the US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access)
-
-- Anthropic says a US government export control directive required it to suspend Fable 5 and Mythos 5 access for all customers, while leaving access to other Anthropic models unaffected.
-- The post frames the dispute around model safeguards, jailbreak risk, and whether a narrow cybersecurity concern should justify recalling a widely deployed commercial model.
-- Good room question: what should a clear, fair process for pausing frontier model access look like when national security, customer reliability, and public technical evidence all collide?
-
-### [Satya Nadella on tokenmaxxing and choosing the right model](https://x.com/satyanadella/status/2066182223213293753)
-
-- Nadella points to a practical AI cost question inside serious organizations: not every task needs the most expensive or capable frontier model.
-- The useful shift is from "use more AI" to "match the model, tool, and workflow to the value of the work."
-- Good room question: how should teams decide when a frontier model is worth it, and when a cheaper, faster, or narrower system is the better engineering choice?
-
 ### [Introducing Claude Opus 4.8](https://www.anthropic.com/news/claude-opus-4-8)
 
 - Anthropic says Opus 4.8 improves on Opus 4.7 across coding, agentic tasks, reasoning, and practical knowledge work while keeping regular pricing the same.
@@ -84,6 +72,18 @@ These are early discussion starters for June 26, 2026. The list is building, and
   <img src="/assets/gpt-5-6-sol-terminalbench-2-1.png" alt="TerminalBench 2.1 score chart showing GPT-5.6 Sol Ultra at 91.9 percent, GPT-5.6 Sol at 88.8 percent, Claude Mythos 5 at 88.0 percent, GPT-5.6 Terra and Claude Fable 5 at 84.3 percent, GPT-5.5 at 83.4 percent, GPT-5.6 Luna at 82.5 percent, Claude Opus 4.8 at 78.9 percent, and Gemini 3.1 Pro Preview at 70.7 percent." />
   <figcaption>OpenAI's Sol announcement frames TerminalBench 2.1 as evidence that the GPT-5.6 family is getting stronger at terminal-based agent work.</figcaption>
 </figure>
+
+### [Statement on the US government directive to suspend access to Fable 5 and Mythos 5](https://www.anthropic.com/news/fable-mythos-access)
+
+- Anthropic says a US government export control directive required it to suspend Fable 5 and Mythos 5 access for all customers, while leaving access to other Anthropic models unaffected.
+- The post frames the dispute around model safeguards, jailbreak risk, and whether a narrow cybersecurity concern should justify recalling a widely deployed commercial model.
+- Good room question: what should a clear, fair process for pausing frontier model access look like when national security, customer reliability, and public technical evidence all collide?
+
+### [Satya Nadella on tokenmaxxing and choosing the right model](https://x.com/satyanadella/status/2066182223213293753)
+
+- Nadella points to a practical AI cost question inside serious organizations: not every task needs the most expensive or capable frontier model.
+- The useful shift is from "use more AI" to "match the model, tool, and workflow to the value of the work."
+- Good room question: how should teams decide when a frontier model is worth it, and when a cheaper, faster, or narrower system is the better engineering choice?
 
 ### [Matthew Berman on X](https://x.com/MatthewBerman/status/2059674916992213093?s=20)
 
